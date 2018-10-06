@@ -47,6 +47,10 @@
             this.txtCheque = new System.Windows.Forms.TextBox();
             this.txtCash = new System.Windows.Forms.TextBox();
             this.grpProgramDataTime_BookingPg = new System.Windows.Forms.GroupBox();
+            this.lblEndTime = new System.Windows.Forms.Label();
+            this.dtpProgrameEndTime = new System.Windows.Forms.DateTimePicker();
+            this.lblStartTime = new System.Windows.Forms.Label();
+            this.dtpProgrameStartTime = new System.Windows.Forms.DateTimePicker();
             this.lblStart = new System.Windows.Forms.Label();
             this.grupEstimate_BookingPg = new System.Windows.Forms.GroupBox();
             this.grupExtraServices = new System.Windows.Forms.GroupBox();
@@ -65,6 +69,10 @@
             this.lblBookingDate = new System.Windows.Forms.Label();
             this.dtpBookingDate = new System.Windows.Forms.DateTimePicker();
             this.grpClientInfo = new System.Windows.Forms.GroupBox();
+            this.txtClientFirstName = new System.Windows.Forms.TextBox();
+            this.txtClientLastName = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.lblClientLastName = new System.Windows.Forms.Label();
             this.grupClientContactNumber = new System.Windows.Forms.GroupBox();
             this.txtClientLandLine = new System.Windows.Forms.TextBox();
             this.txtClientEmail = new System.Windows.Forms.TextBox();
@@ -74,18 +82,14 @@
             this.txtClientMobile = new System.Windows.Forms.TextBox();
             this.lblClientMobile = new System.Windows.Forms.Label();
             this.grupClientAddress = new System.Windows.Forms.GroupBox();
+            this.lblClientCityName = new System.Windows.Forms.Label();
+            this.txtClientCityName = new System.Windows.Forms.TextBox();
             this.lblClientWardNumber = new System.Windows.Forms.Label();
             this.txtClientWardNumber = new System.Windows.Forms.TextBox();
             this.lblClientStreetName = new System.Windows.Forms.Label();
             this.txtClientStreetName = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.lblClientFirstName = new System.Windows.Forms.Label();
-            this.txtClientLastName = new System.Windows.Forms.TextBox();
-            this.lblClientLastName = new System.Windows.Forms.Label();
-            this.txtClientFirstName = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.lblClientCityName = new System.Windows.Forms.Label();
-            this.txtClientCityName = new System.Windows.Forms.TextBox();
             this.grupHostInfo = new System.Windows.Forms.GroupBox();
             this.txtHostName = new System.Windows.Forms.TextBox();
             this.txtHostLastName = new System.Windows.Forms.TextBox();
@@ -113,10 +117,6 @@
             this.btnBackToHome = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSubmite = new System.Windows.Forms.Button();
-            this.lblStartTime = new System.Windows.Forms.Label();
-            this.dtpProgrameStartTime = new System.Windows.Forms.DateTimePicker();
-            this.lblEndTime = new System.Windows.Forms.Label();
-            this.dtpProgrameEndTime = new System.Windows.Forms.DateTimePicker();
             this.lblHostPicture = new System.Windows.Forms.Label();
             this.grupEventType_BookingPg.SuspendLayout();
             this.grupAdvance.SuspendLayout();
@@ -321,6 +321,54 @@
             this.grpProgramDataTime_BookingPg.TabIndex = 15;
             this.grpProgramDataTime_BookingPg.TabStop = false;
             this.grpProgramDataTime_BookingPg.Text = "Programe Date/Time:";
+            // 
+            // lblEndTime
+            // 
+            this.lblEndTime.AutoSize = true;
+            this.lblEndTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEndTime.Location = new System.Drawing.Point(141, 56);
+            this.lblEndTime.Name = "lblEndTime";
+            this.lblEndTime.Size = new System.Drawing.Size(41, 15);
+            this.lblEndTime.TabIndex = 14;
+            this.lblEndTime.Tag = "";
+            this.lblEndTime.Text = "Time :";
+            // 
+            // dtpProgrameEndTime
+            // 
+            this.dtpProgrameEndTime.Checked = false;
+            this.dtpProgrameEndTime.CustomFormat = "hh:mm tt";
+            this.dtpProgrameEndTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpProgrameEndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpProgrameEndTime.Location = new System.Drawing.Point(182, 53);
+            this.dtpProgrameEndTime.Name = "dtpProgrameEndTime";
+            this.dtpProgrameEndTime.ShowUpDown = true;
+            this.dtpProgrameEndTime.Size = new System.Drawing.Size(80, 20);
+            this.dtpProgrameEndTime.TabIndex = 13;
+            this.dtpProgrameEndTime.Value = new System.DateTime(2018, 9, 29, 18, 53, 0, 0);
+            // 
+            // lblStartTime
+            // 
+            this.lblStartTime.AutoSize = true;
+            this.lblStartTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStartTime.Location = new System.Drawing.Point(141, 30);
+            this.lblStartTime.Name = "lblStartTime";
+            this.lblStartTime.Size = new System.Drawing.Size(41, 15);
+            this.lblStartTime.TabIndex = 12;
+            this.lblStartTime.Tag = "";
+            this.lblStartTime.Text = "Time :";
+            // 
+            // dtpProgrameStartTime
+            // 
+            this.dtpProgrameStartTime.Checked = false;
+            this.dtpProgrameStartTime.CustomFormat = "hh:mm tt";
+            this.dtpProgrameStartTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpProgrameStartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpProgrameStartTime.Location = new System.Drawing.Point(182, 27);
+            this.dtpProgrameStartTime.Name = "dtpProgrameStartTime";
+            this.dtpProgrameStartTime.ShowUpDown = true;
+            this.dtpProgrameStartTime.Size = new System.Drawing.Size(80, 20);
+            this.dtpProgrameStartTime.TabIndex = 11;
+            this.dtpProgrameStartTime.Value = new System.DateTime(2018, 9, 29, 18, 53, 0, 0);
             // 
             // lblStart
             // 
@@ -533,6 +581,42 @@
             this.grpClientInfo.Text = "Booked By (Client Information)";
             this.grpClientInfo.Enter += new System.EventHandler(this.groupBoxClientInformation_Enter);
             // 
+            // txtClientFirstName
+            // 
+            this.txtClientFirstName.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClientFirstName.Location = new System.Drawing.Point(85, 16);
+            this.txtClientFirstName.Name = "txtClientFirstName";
+            this.txtClientFirstName.Size = new System.Drawing.Size(157, 23);
+            this.txtClientFirstName.TabIndex = 58;
+            // 
+            // txtClientLastName
+            // 
+            this.txtClientLastName.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClientLastName.Location = new System.Drawing.Point(322, 16);
+            this.txtClientLastName.Name = "txtClientLastName";
+            this.txtClientLastName.Size = new System.Drawing.Size(130, 23);
+            this.txtClientLastName.TabIndex = 55;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(309, 19);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(15, 18);
+            this.label12.TabIndex = 57;
+            this.label12.Text = "*";
+            // 
+            // lblClientLastName
+            // 
+            this.lblClientLastName.AutoSize = true;
+            this.lblClientLastName.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClientLastName.Location = new System.Drawing.Point(245, 19);
+            this.lblClientLastName.Name = "lblClientLastName";
+            this.lblClientLastName.Size = new System.Drawing.Size(63, 15);
+            this.lblClientLastName.TabIndex = 56;
+            this.lblClientLastName.Text = "Last Name";
+            // 
             // grupClientContactNumber
             // 
             this.grupClientContactNumber.Controls.Add(this.txtClientLandLine);
@@ -631,6 +715,24 @@
             this.grupClientAddress.TabStop = false;
             this.grupClientAddress.Text = "Address Information :";
             // 
+            // lblClientCityName
+            // 
+            this.lblClientCityName.AutoSize = true;
+            this.lblClientCityName.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblClientCityName.Location = new System.Drawing.Point(191, 54);
+            this.lblClientCityName.Name = "lblClientCityName";
+            this.lblClientCityName.Size = new System.Drawing.Size(69, 15);
+            this.lblClientCityName.TabIndex = 60;
+            this.lblClientCityName.Text = "City Name :";
+            // 
+            // txtClientCityName
+            // 
+            this.txtClientCityName.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtClientCityName.Location = new System.Drawing.Point(270, 50);
+            this.txtClientCityName.Name = "txtClientCityName";
+            this.txtClientCityName.Size = new System.Drawing.Size(176, 23);
+            this.txtClientCityName.TabIndex = 59;
+            // 
             // lblClientWardNumber
             // 
             this.lblClientWardNumber.AutoSize = true;
@@ -686,60 +788,6 @@
             this.lblClientFirstName.Size = new System.Drawing.Size(64, 15);
             this.lblClientFirstName.TabIndex = 0;
             this.lblClientFirstName.Text = "First Name";
-            // 
-            // txtClientLastName
-            // 
-            this.txtClientLastName.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtClientLastName.Location = new System.Drawing.Point(322, 16);
-            this.txtClientLastName.Name = "txtClientLastName";
-            this.txtClientLastName.Size = new System.Drawing.Size(130, 23);
-            this.txtClientLastName.TabIndex = 55;
-            // 
-            // lblClientLastName
-            // 
-            this.lblClientLastName.AutoSize = true;
-            this.lblClientLastName.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClientLastName.Location = new System.Drawing.Point(245, 19);
-            this.lblClientLastName.Name = "lblClientLastName";
-            this.lblClientLastName.Size = new System.Drawing.Size(63, 15);
-            this.lblClientLastName.TabIndex = 56;
-            this.lblClientLastName.Text = "Last Name";
-            // 
-            // txtClientFirstName
-            // 
-            this.txtClientFirstName.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtClientFirstName.Location = new System.Drawing.Point(85, 16);
-            this.txtClientFirstName.Name = "txtClientFirstName";
-            this.txtClientFirstName.Size = new System.Drawing.Size(157, 23);
-            this.txtClientFirstName.TabIndex = 58;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(309, 19);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(15, 18);
-            this.label12.TabIndex = 57;
-            this.label12.Text = "*";
-            // 
-            // lblClientCityName
-            // 
-            this.lblClientCityName.AutoSize = true;
-            this.lblClientCityName.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblClientCityName.Location = new System.Drawing.Point(191, 54);
-            this.lblClientCityName.Name = "lblClientCityName";
-            this.lblClientCityName.Size = new System.Drawing.Size(69, 15);
-            this.lblClientCityName.TabIndex = 60;
-            this.lblClientCityName.Text = "City Name :";
-            // 
-            // txtClientCityName
-            // 
-            this.txtClientCityName.Font = new System.Drawing.Font("Segoe UI Symbol", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtClientCityName.Location = new System.Drawing.Point(270, 50);
-            this.txtClientCityName.Name = "txtClientCityName";
-            this.txtClientCityName.Size = new System.Drawing.Size(176, 23);
-            this.txtClientCityName.TabIndex = 59;
             // 
             // grupHostInfo
             // 
@@ -995,6 +1043,7 @@
             this.btnBackToHome.TabIndex = 63;
             this.btnBackToHome.Text = "&BACK TO HOME";
             this.btnBackToHome.UseVisualStyleBackColor = true;
+            this.btnBackToHome.Click += new System.EventHandler(this.btnBackToHome_Click);
             // 
             // btnCancel
             // 
@@ -1016,54 +1065,6 @@
             this.btnSubmite.Text = "&SUBMIT";
             this.btnSubmite.UseVisualStyleBackColor = true;
             this.btnSubmite.Click += new System.EventHandler(this.btnSubmite_Click);
-            // 
-            // lblStartTime
-            // 
-            this.lblStartTime.AutoSize = true;
-            this.lblStartTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblStartTime.Location = new System.Drawing.Point(141, 30);
-            this.lblStartTime.Name = "lblStartTime";
-            this.lblStartTime.Size = new System.Drawing.Size(41, 15);
-            this.lblStartTime.TabIndex = 12;
-            this.lblStartTime.Tag = "";
-            this.lblStartTime.Text = "Time :";
-            // 
-            // dtpProgrameStartTime
-            // 
-            this.dtpProgrameStartTime.Checked = false;
-            this.dtpProgrameStartTime.CustomFormat = "hh:mm tt";
-            this.dtpProgrameStartTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpProgrameStartTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpProgrameStartTime.Location = new System.Drawing.Point(182, 27);
-            this.dtpProgrameStartTime.Name = "dtpProgrameStartTime";
-            this.dtpProgrameStartTime.ShowUpDown = true;
-            this.dtpProgrameStartTime.Size = new System.Drawing.Size(80, 20);
-            this.dtpProgrameStartTime.TabIndex = 11;
-            this.dtpProgrameStartTime.Value = new System.DateTime(2018, 9, 29, 18, 53, 0, 0);
-            // 
-            // lblEndTime
-            // 
-            this.lblEndTime.AutoSize = true;
-            this.lblEndTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEndTime.Location = new System.Drawing.Point(141, 56);
-            this.lblEndTime.Name = "lblEndTime";
-            this.lblEndTime.Size = new System.Drawing.Size(41, 15);
-            this.lblEndTime.TabIndex = 14;
-            this.lblEndTime.Tag = "";
-            this.lblEndTime.Text = "Time :";
-            // 
-            // dtpProgrameEndTime
-            // 
-            this.dtpProgrameEndTime.Checked = false;
-            this.dtpProgrameEndTime.CustomFormat = "hh:mm tt";
-            this.dtpProgrameEndTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpProgrameEndTime.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpProgrameEndTime.Location = new System.Drawing.Point(182, 53);
-            this.dtpProgrameEndTime.Name = "dtpProgrameEndTime";
-            this.dtpProgrameEndTime.ShowUpDown = true;
-            this.dtpProgrameEndTime.Size = new System.Drawing.Size(80, 20);
-            this.dtpProgrameEndTime.TabIndex = 13;
-            this.dtpProgrameEndTime.Value = new System.DateTime(2018, 9, 29, 18, 53, 0, 0);
             // 
             // lblHostPicture
             // 

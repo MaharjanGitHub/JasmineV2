@@ -107,5 +107,11 @@ namespace JasmineV2
             }
         }
 
+        private void btnBackToHome_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            frmHomePage HomePg = new frmHomePage();
+            HomePg.Show();
+        }
     }
 }
